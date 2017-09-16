@@ -3,6 +3,7 @@ require 'capybara'
 require 'capybara/dsl'
 require 'selenium-webdriver'
 require 'rspec'
+require 'site_prism'
  
 Capybara.run_server = false
 #Set default driver as Selenium

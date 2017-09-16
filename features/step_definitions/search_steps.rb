@@ -1,5 +1,7 @@
 Then(/^Search control should be display$/) do
-  page.should have_selector("div", :id => "docsearch")
+  @home_page = Home.new
+  @home_page.load
+  @home_page.should have_selector("div", :id => "docsearch")
 end
 
 # When(/^I enter "([^"]*)" on search control$/) do |searchText|
